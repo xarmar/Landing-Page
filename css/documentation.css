@@ -1,43 +1,76 @@
-.coding {
-padding: 15px;
-color: green;
-background-color: black;
+/* NAVBAR */
+#navbar {
+    font-size: larger;
+    text-align: center;
+    background-color:darkslategray;
+    height: fit-content;
+    margin-top: 1%;
+    flex-shrink: 1;
 }
 
-.code-header {
-    margin-top: 15px;
-    font-size: medium;
-    text-decoration: underline;
+#navbar header {
+    background-color: steelblue;
+    font-size: 21px;
+    padding: 6px;
 }
 
-code {
+#navbar p {
+    display: block;
+    align-items: center;
+    font-size: 19px;
 }
 
-.nav li {
-    list-style-type: none;   
+#navbar li {
+    list-style-type: none;
+    margin-top: 90%;
 }
 
-.nav-link:hover {
-    color: cadetblue;
-    background-color: lightgrey;
+#navbar a {
+    text-decoration: none;
+    color: black;
+    background-color: black;
+    padding: 2px;
+    color: white;
 }
+
+#navbar a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: steelblue;
+    padding: 2px;
+    color: white;
+}
+
+
+/* BODY */
+
 
 body {
-    width: 70%;
     margin: 5px 10px 10px 5px;
     display: flex;
+    flex-basis: initial;
 }
 
 .left {
-    margin-top:25px;
+    margin-top: 5px;
     margin-left: 25px;
     margin-right: 50px;
-    align-items: stretch;
 }
 
 
 #main-doc {
     -ms-flex-item-align: center;
+    margin-left: 10%;
+    width: 50%;
+    flex-shrink: 1;
+}
+
+#main-doc p {
+    font-size: 21px;
+}
+
+#main-doc li {
+    font-size: 19px;
 }
 
 .main-section {
@@ -53,6 +86,12 @@ h2 {
 
 .alt-p{
     margin-top: 20px;
-    font-size: large;
     text-decoration: underline;
+}
+
+/* GREEN CODE */
+.coding {
+padding: 15px;
+color: green;
+background-color: black;
 }
