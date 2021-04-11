@@ -8,24 +8,16 @@ accent redsalsa - F03A47
 
 /* NAVBAR FOR DESKTOP ------------------------------------------------------------------------------------------------- */
 @media only screen and (min-width: 1366px) {
-
-#navbar {
-font-size: larger;
-text-align: center;
-background-color:#183059;
-height: fit-content;
-margin-top: 1%;
-flex-shrink: 1;
-position: fixed;
-}
-#navbar #main-menu,
-#navbar > input {
-display: none;
+    #navbar {
+    font-size: larger;
+    text-align: center;
+    background-color:#183059;
+    height: fit-content;
+    margin-top: 1%;
+    flex-shrink: 1;
+    position: fixed;
 }
 
-#navbar > label {
-display: none
-}
 
 #navbar header {
     background-color: #276FBF;
@@ -42,7 +34,71 @@ display: none
 
 #navbar li {
     list-style-type: none;
-    margin-top: 90%;
+    margin-top:80%;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: black;
+    padding: 2px;
+    color: #F6F4F3;
+}
+
+#navbar a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: #F03A47;
+    padding: 2px;
+    color: #F6F4F3;
+}
+
+#navbar label {
+    opacity: 0;
+}
+
+#toggle-mobile-menu {
+    opacity: 0;
+}
+
+}   
+
+/* NAVBAR FOR TABLETS/MOBILE ------------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 1365px) {
+    #navbar /* site*/ {
+    display: block;
+    background: #000;
+    height: 48px;
+    width: 50%;
+    margin-right: 10%;
+    padding-top: 30px;
+    position:fixed;
+    display: flex;
+    align-self: center;
+    font-size: small;
+    text-align: center;
+    background-color:  #183059;
+    margin-top: 1%;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+
+#navbar li {
+    list-style-type: none;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50px 50px 50px 50px 50px;
+    grid-row-gap: 10px;
+    justify-self: center;
+    margin-bottom: 5px;
+}
+
+
+
+#navbar header {
+    opacity: 0 ;
 }
 
 #navbar a {
@@ -60,81 +116,6 @@ display: none
     color: #F6F4F3;
 }
 }   
-
-/* NAVBAR FOR TABLETS/MOBILE ------------------------------------------------------------------------------------------------- */
-@media only screen and (max-width: 1365px) {
-
-    #navbar {
-        display: block;
-        background: #183059;
-        height: 48px;
-      }
-       
-      #navbar #main-menu,
-      #navbar > input {
-        display: none;
-      }
-       
-      #navbar > label {
-        display: block;
-        font-size: 36px;
-        color: #F6F4F3;
-        position: absolute;
-        right: 20px;
-        width: 36px;
-        padding: 0;
-        cursor: pointer;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-       
-      #navbar > input:checked + #main-menu {
-        display: block;
-        clear: both;
-        top: 36px;
-        position: relative;
-        background: #183059;
-        color: #F6F4F3;
-      }
-       
-      #navbar ul li {
-        display: block;
-        padding: 12px 10px;
-      }
-       
-      #navbar a {
-        text-decoration: none;
-        color: #F6F4F3;
-      }
-
-      #navbar header {
-          opacity: 0;
-      }
-       
-      @media only screen and (min-device-width: 768px) {
-        #site-navigation {
-          height: auto;
-        }
-        #site-navigation #main-menu {
-          display: block;
-        }
-        #site-navigation > label {
-          display: none
-        }
-        #site-navigation ul li {
-          display: inline-block;
-        }
-        #navbar header {
-            opacity: 0;
-        }
-      }
-      
-
-}
 
 /* BODY -------------------------------------------------------------------------------------------------------------- */
 
@@ -178,21 +159,39 @@ body {
         margin-left: 20%;
         width: 50%;
         flex-shrink: 1;
-        margin-top: 35px;
+        margin-top: 50px;
     }
 }
 
+@media only screen and (max-width: 1365px) {
+
 #main-doc p {
-    font-size: 19px;
+    font-size: 15px;
 }
 
 #main-doc li {
-    font-size: 19px;
+    font-size: 15px;
 }
 
 .main-section {
     margin-top: 35px;
 }
+}
+@media only screen and (min-width: 1366px) {
+
+    #main-doc p {
+        font-size: 19px;
+    }
+    
+    #main-doc li {
+        font-size: 19px;
+    }
+    
+    .main-section {
+        margin-top: 35px;
+    }
+    
+    }
 
 h2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -205,7 +204,7 @@ h2 {
     margin-top: 30px;
     text-decoration: underline;
 }
-}
+
 
 @media only screen and (min-width: 1366px) {
 /* GREEN CODE */
