@@ -49,9 +49,11 @@ accent redsalsa - F03A47
  
 #navbar ul li {
     display: block;
-    padding: 12px;
+    padding: 12px 0px 12px 0px;
     margin-right: 40px;
+    font-size: large;
 }
+
  
 #navbar a {
     text-decoration: none;
