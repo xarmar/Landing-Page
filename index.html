@@ -2,22 +2,25 @@
     <html>
         <head>
             <title>Programming Languages</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
             <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <link href="css/documentation.css" rel="stylesheet" type="text/css">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-            <script src="css/documentation.js"></script>
         </head>
         <body>
             <nav id="navbar">
                 <header><p>Menu</p></header>
-                    <ul class="nav nav-pills left sticky-top">
-                        <li> <a class="nav-link" href="#Javascript">Javascript</a></li>
-                        <li> <a class="nav-link" href="#Python"">Python</a></li>
-                        <li> <a class="nav-link" href="#Java">Java</a></li>
-                        <li> <a class="nav-link" href="#Kotlin">Kotlin</a></li>
-                        <li> <a class="nav-link" href="#React">React</a></li>
+                    <!-- FOR MOBILE MENU-->
+                    <label for="toggle-mobile-menu" aria-label="Menu">&#9776;</label>
+                    <input id="toggle-mobile-menu" type="checkbox" />
+                    <!-- MENU -->
+                    <ul id ="main-menu" class="nav nav-pills left sticky-top">
+                        <li> <a class="nav-link javascript" href="#Javascript">Javascript</a></li>
+                        <li> <a class="nav-link python" href="#Python"">Python</a></li>
+                        <li> <a class="nav-link java" href="#Java">Java</a></li>
+                        <li> <a class="nav-link kotlin" href="#Kotlin">Kotlin</a></li>
+                        <li> <a class="nav-link react" href="#React">React</a></li>
                     </ul>
             </nav>
             <main id="main-doc">
@@ -47,9 +50,8 @@
                                     x = 5;    // Assign the value 5 to x<br>
                                     y = 6;    // Assign the value 6 to y<br>
                                     z = x + y;  // Assign the sum of x and y to z<br>
-                                    <br>
-                                    document.getElementById("demo").innerHTML =<br>
-                                    "The value of z is " + z + ".";<br>
+                                    document.getElementById("demo")
+                                    .innerHTML = "The value of z is " + z + ".";
                                 </code>
                             </div>
 
@@ -72,9 +74,8 @@
                             <div class="coding">
                             <code> 
                             thislist = ["apple", "banana", "cherry"]<br>
-                                <br>
                                 for x in thislist:<br>
-                                ㅤㅤprint(x)<br>
+                                ㅤㅤㅤㅤprint(x)<br>
                             </code>
                         </div>
                 </section>
@@ -100,10 +101,11 @@
                             <code> 
                                 public class Main {<br>
                                     ㅤㅤpublic static void main(String[] args) {<br>
-                                        ㅤㅤString txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";<br>
+                                        ㅤㅤString txt = "ABCDEFGHIJKLMNO<br>
+                                            PQRSTUVWXYZ";<br>
                                         ㅤㅤSystem.out.println("The length of the txt string is: " + txt.length());<br>
-                                        ㅤㅤ}<br>
-                                        }<br>
+                                        ㅤㅤ<br>}
+                                       <br> }
                             </code>
                         </div>
 
@@ -175,10 +177,11 @@
                                 class Test extends React.Component {<br>
                                 render() {<br>
                                     ㅤㅤreturn &lth1&gt Hello World! &lt/h1&gt ;<br>
-                                }
-                                }
+                                }<br>
+                                }<br>
 
-                                ReactDOM.render(<Test />, document.getElementById('root'));
+                                ReactDOM.render(&ltTest&gt, document.getElementById<br>
+                                ('root'));<br>
                             </code>
                         </div>
                 </section>
