@@ -1,196 +1,147 @@
-    <!DOCTYPE html>    
-    <html>
-        <head>
-            <title>Programming Languages</title>
-            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-            <link href="css/desktop.css" rel="stylesheet" type="text/css">
-            <link href="css/mobile.css" rel="stylesheet" type="text/css">
-            <script src="css/documentation.js"></script>
-        </head>
-        <body>
-            <nav id="navbar">
-                <header><p>Menu</p></header>
-                    <!-- FOR MOBILE MENU-->
-                    <label for="toggle-mobile-menu" aria-label="Menu">&#9776;</label>
-                    <input id="toggle-mobile-menu" type="checkbox"/>
-                    <!-- MENU -->
-                    <ul id ="main-menu" class="nav nav-pills left sticky-top">
-                        <li> <a class="nav-link javascript" href="#Javascript">Javascript</a></li>
-                        <li> <a class="nav-link python" href="#Python"">Python</a></li>
-                        <li> <a class="nav-link java" href="#Java">Java</a></li>
-                        <li> <a class="nav-link kotlin" href="#Kotlin">Kotlin</a></li>
-                        <li> <a class="nav-link react" href="#React">React</a></li>
-                    </ul>
-            </nav>
-            <main id="main-doc">
-                <section class="main-section" id="Javascript">
-                        <header> 
-                            <h2>Javascript</h2> 
-                        </header>
-                        <p>Modern JavaScript is a “safe” programming language. It does not provide low-level access to memory or CPU, because it was initially created for browsers which do not require it.
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="css/landing.css" rel="stylesheet" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <title>Lisbon Boat Adventure</title>
+    </head>
+    <body class = "text_center general_background">
+        <!-- NAVIGATION BAR -->
+    <header id="header">
+        <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light bg-light navbar fixed-top">
+        <a class="navbar-brand" href="index.html">
+          <img id="header-img" src="https://i.ibb.co/3fz8cZk/logo.png" width="50" alt="logo" class="d-inline-block align-middle mr-2">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#adventure">Your Adventure</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#ourstory">Our Story</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-                            JavaScript’s capabilities greatly depend on the environment it’s running in. For instance, Node.js supports functions that allow JavaScript to read/write arbitrary files, perform network requests, etc.
-                            
-                            In-browser JavaScript can do everything related to webpage manipulation, interaction with the user, and the webserver.
-                            </p>
-                        <p>For instance, in-browser JavaScript is able to:</p>
-                            <ul>
-                                <li>Add new HTML to the page, change the existing content, modify styles.</li>
-                                <li>React to user actions, run on mouse clicks, pointer movements, key presses.</li>
-                                <li>Send requests over the network to remote servers, download and upload files (so-called AJAX and COMET technologies).</li>
-                                <li>Get and set cookies, ask questions to the visitor, show messages.</li>
-                                <li>Remember the data on the client-side (“local storage”).</li>
-                            </ul>
-                            
-                            <p class="alt-p">Synthax Example:</p>
-                            <div class="coding">
-                                <code> 
-                                    var x, y, z;  // Declare 3 variables<br>
-                                    x = 5;    // Assign the value 5 to x<br>
-                                    y = 6;    // Assign the value 6 to y<br>
-                                    z = x + y;  // Assign the sum of x and y to z<br>
-                                    document.getElementById("demo")
-                                    .innerHTML = "The value of z is " + z + ".";
-                                </code>
-                            </div>
+    <!-- VIDEO BANNER -->
+    <br>
+    <br>
+    <br>
 
-                </section>
-                <section class="main-section" id="Python">
-                    <header> 
-                        <h2>Python</h2> 
-                    </header>
-                        <p>In technical terms, Python is an object-oriented, high-level programming language with integrated 
-                            dynamic semantics primarily for web and app development. It is extremely attractive in the field of 
-                            Rapid Application Development because it offers dynamic typing and dynamic binding options. </p>
-                        <p>What can Python do?</p>
-                            <li>Python can be used on a server to create web applications.</li>
-                            <li>Python can be used alongside software to create workflows.</li>
-                            <li>Python can connect to database systems. It can also read and modify files.</li>
-                            <li>Python can be used to handle big data and perform complex mathematics.</li>
-                            <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
-                        
-                            <p class="alt-p">Synthax Example:</p>
-                            <div class="coding">
-                            <code> 
-                            thislist = ["apple", "banana", "cherry"]<br>
-                                for x in thislist:<br>
-                                ㅤㅤㅤㅤprint(x)<br>
-                            </code>
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe id="video" class="embed-responsive-item" src="https://www.youtube.com/embed/KiWeQXK3Osk"></iframe>
+      </div>
+
+    <br id="adventure">
+    <br>
+         <!-- HERO BANNERS 1 -->
+         <section class="hero-banner bg-light py-5">
+            <div class="container">
+                <div class="row row align-items-center">
+                    <div class="col-lg-5 offset-lg-1 order-lg-1">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgodiscoverportugal.com%2Fwp-content%2Fuploads%2F2016%2F06%2FIMG_5545.jpg&f=1&nofb=1" class="img-fluid reduceimg" alt="picture of boat sailing">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="mt-3">Your Adventure</h1>
+                        <p class="lead text-secondary my-5">Nothing's better than the feeling of freedom you get from sailing. Invite your friends & have fun sailing across Lisbon! </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <br id="ourstory">
+        <br>
+             <!-- HERO BANNER 2 -->
+        <section class="hero-banner bg-light py-5">
+        <div class="container">
+            <div class="row row align-items-center">
+                <div class="col-lg-5 offset-lg-1 order-lg-0">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Faufpassen-um-red.com%2Fimages%2FusIrkkXscws0OwmwLK95YgHaE8.jpg&f=1&nofb=1" class="img-fluid reduceimg" alt="picture of boat sailing">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="mt-3">Our Story</h1>
+                    <p class="lead text-secondary my-5">In 2017, we started our company with big dreams and one boat. Today, we're the leading providers of sailing activities in Lisbon, having welcomed thousands of freedom seekers.</p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        
+        <br id="pricing">
+        <br>
+        <br>
+        <!-- PRICING TABLE -->
+        <h2>Pricing</h2>
+        <div id="pricing-table" class="container mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="pricing-card p-3 text-center py-5 mt-2">
+                        <div class="images"><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.drawingskill.com%2Fwp-content%2Fuploads%2F2%2FBoat-Realistic-Drawing.png&f=1&nofb=1" width="50"><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.drawingskill.com%2Fwp-content%2Fuploads%2F2%2FBoat-Realistic-Drawing.png&f=1&nofb=1" width="50"></div>
+                        <h6 class="mt-3">Solo Adventure</h6><span class="d-block font-weight-bold mt-3">70€</span><span class="d-block"></span><button class="btn btn-primary shadow mt-4 px-5 rounded-pill" type="button">Buy</button>
+                        <div class="mt-3">
+                            <span class="d-block"><i class="fa fa-check"></i>&nbsp;Sail with a certified instructor.</span>
+                            <span class="d-block"><i class="fa fa-check"></i>&nbsp;Just you and the sea.</span>
+                            <span class="d-block"><i class="fa fa-check"></i>&nbsp;Enjoy the Freedom.</span>
+                            <span class="d-block"><i class="fa fa-check"></i>&nbsp;Two hours of sailing.</span>
                         </div>
-                </section>
-                <section class="main-section" id="Java">
-                    <header> 
-                        <h2>Java</h2> 
-                    </header>
-                        <p>It is a free-to-use programming language that’s also open source. In any case, it’s a widely used language, that’s designed for use in the distributed environment of the internet.</p>
-                        <p>It’s a popular tool, and for a variety of reasons. From the inherent benefits, to the after-effects. I’d 
-                            like to take you through some of its merits. Firstly, this language is simple for even novel developers. 
-                            Java is quick to learn, making this a highly logical choice.</p>
-                        <p>There were five primary goals in the creation of the Java language:</p>
-                            <ol>
-                                <li>It must be simple, object-oriented, and familiar.</li>
-                                <li>It must be robust and secure.</li>
-                                <li>It must be architecture-neutral and portable.</li>
-                                <li>It must execute with high performance.</li>
-                                <li>It must be interpreted, threaded, and dynamic.</li>
-                            </ol>
-                    
-                    <p class="alt-p">Synthax Example:</p>
-                        <div class="coding">
-                            <code> 
-                                public class Main {<br>
-                                    ㅤㅤpublic static void main(String[] args) {<br>
-                                        ㅤㅤString txt = "ABCDEFGHIJKLMNO<br>
-                                            PQRSTUVWXYZ";<br>
-                                        ㅤㅤSystem.out.println("The length of the txt string is: " + txt.length());<br>
-                                        ㅤㅤ<br>}
-                                       <br> }
-                            </code>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pricing-card p-3 text-center py-5 mt-2">
+                        <div class="images"><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.drawingskill.com%2Fwp-content%2Fuploads%2F2%2FBoat-Realistic-Drawing.png&f=1&nofb=1" width="50"><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.drawingskill.com%2Fwp-content%2Fuploads%2F2%2FBoat-Realistic-Drawing.png&f=1&nofb=1" width="50"></div>
+                        <h6 class="mt-3"> Double Adventure</h6><span class="d-block font-weight-bold mt-3">110€</span><span class="d-block"></span><button class="btn btn-primary shadow mt-4 px-5 rounded-pill" type="button">Buy</button>
+                        <div class="mt-3">
+                            <span class="d-block"><i class="fa fa-check"></i>&nbsp;Sail with a certified instructor.</span>
+                            <span class="d-block"><i class="fa fa-check"></i>&nbsp;Food and drinks included.</span>
+                            <span class="d-block"><i class="fa fa-check"></i>&nbsp;Invite a friend to join you.</span>
+                            <span class="d-block"><i class="fa fa-check"></i>&nbsp;Two hours of sailing.</span>
                         </div>
-
-                </section>
-                <section class="main-section" id="Kotlin">
-                    <header> 
-                        <h2>Kotlin</h2> 
-                    </header>
-                        <p>Kotlin is a statically typed, general-purpose programming language with type inference. It is widely used 
-                            to develop Android application. Kotlin is designed to interoperate fully with Java, and the JVM version of 
-                            its standard library depends on the Java Class Library, but type inference allows its syntax to be more 
-                            concise. Kotlin mainly targets the JVM but also compiles to JavaScript or native code. Kotlin is sponsored 
-                            by JetBrains and Google, through the Kotlin Foundation.</p>
-                        <p> <strong><u>Features of Kotlin</u></strong></p>
-                        <ul>
-                            <li><strong>Concise</strong>: Kotlin is more concise than Java and you would need to write approximately 40% fewer lines of code when compared to Java.</li>
-                            <li><strong>Interoperability</strong>: Kotlin programming language is highly interoperable with Java. You will never face any difficulty using Kotlin in a Java project.</li>
-                            <li><strong>Feature-rich</strong>: Kotlin provides several advanced features such as Operator overloading, Lambda expressions, String templates, etc.</li>
-                            <li><strong>Easy</strong>: Kotlin is easy to learn programming language. If you have come from a Java background, you would find it easy to learn Kotlin.</li>
-                            <li><strong>Less error-prone</strong>: As I have mentioned before, Kotlin is a statically-typed programming language, which makes you able to catch errors at compile-time, as Statically typed programming languages do type checking at compile-time.</li>
-                        </ul>
-                        <p class="alt-p">Synthax Example:</p>
-                        <div class="coding">
-                            <code> 
-                                package com.kotlin.programs
-                                <br>
-                                fun main(args: Array < String > ) {
-                                <br>
-                                ㅤㅤval number1 = 10<br>
-                                ㅤㅤval number2 = 20<br>
-                                ㅤㅤval number3 = 5<br>
-                                    <br>
-                                if (number1 >= number2 && number1 >= number3) {<br>
-                                    ㅤㅤprintln("$number1 is the largest number.")<br>
-                                } else if (number2 >= number1 && number2 >= number3) {<br>
-                                    ㅤㅤprintln("$number2 is the largest number.")<br>
-                                } else {<br>
-                                    ㅤㅤprintln("$number3 is the largest number.")<br>
-                                    ㅤㅤ}<br>
-                                }
-                            </code>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pricing-card p-3 text-center py-5 mt-2">
+                        <div class="images"><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.drawingskill.com%2Fwp-content%2Fuploads%2F2%2FBoat-Realistic-Drawing.png&f=1&nofb=1" width="50"><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.drawingskill.com%2Fwp-content%2Fuploads%2F2%2FBoat-Realistic-Drawing.png&f=1&nofb=1" width="50"><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.drawingskill.com%2Fwp-content%2Fuploads%2F2%2FBoat-Realistic-Drawing.png&f=1&nofb=1" width="50"></div>
+                        <h6 class="mt-3">Team Adventure</h6><span class="d-block font-weight-bold mt-3">145€</span><span class="d-block"></span><button class="btn btn-primary shadow mt-4 px-5 rounded-pill" type="button">Buy</button>
+                        <div class="mt-3">
+                            <span class="d-block"><i class="fa fa-check"></i>&nbsp;Sail with a certified instructor.</span>
+                            <span class="d-block"><i class="fa fa-check"></i>&nbsp;Food and drinks included.</span>
+                            <span class="d-block"><i class="fa fa-check"></i>&nbsp;Invite 2 friends to join you.</span>
+                            <span class="d-block"><i class="fa fa-check"></i>&nbsp;Two hours of sailing.</span>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                </section>
-                <section class="main-section" id="React">
-                    <header> 
-                        <h2>React</h2> 
-                    </header>
-                        <p>React (also known as React.js or ReactJS) is an open-source, front end, JavaScript library for building 
-                            user interfaces or UI components. It is maintained by Facebook and a community of individual developers 
-                            and companies. React can be used as a base in the development of single-page or mobile applications. 
-                            However, React is only concerned with state management and rendering that state to the DOM, so creating 
-                            React applications usually requires the use of additional libraries for routing, as well as certain 
-                            client-side functionality.</p>
-                        <ul>
-                            <li>Easy to Learn, Easy to Use</li>
-                            <li>Reusable Components</li>
-                            <li>Great Developer Tools</li>
-                            <li>Ease of Migration:</li>
-                            <li>Uplifts Developers’ Productivity</li>
+        <!-- FORM FOR EMAIL ADDRESS-->
+             
+            </div>
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                <label id="label-email" for="email">Insert your email adress for a change to win a 50% off voucher:</label>
+                <input id="email" type="email" name="email" required placeholder="Your Email Adress">
+                <input id="submit" type="submit">
+            </form>   
 
-                        </ul>
-                        <p class="alt-p">Synthax Example:</p>
-                        <div class="coding">
-                            <code> 
-                                import React from 'react';<br>
-                                import ReactDOM from 'react-dom';<br>
-                                <br>
-                                class Test extends React.Component {<br>
-                                render() {<br>
-                                    ㅤㅤreturn &lth1&gt Hello World! &lt/h1&gt ;<br>
-                                }<br>
-                                }<br>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container text-center">
+                <small style="color: #353137">Developed by <a href="https://github.com/xarmar"">xarmar</a> as a project for FreeCodeCamp.</small>
+            </div>
+        </footer>
+                </body>
 
-                                ReactDOM.render(&ltTest&gt, document.getElementById<br>
-                                ('root'));<br>
-                            </code>
-                        </div>
-                </section>
-            </main>
-
-
-        </body>
-    </html>
-
-    
+</html>

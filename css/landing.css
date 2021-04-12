@@ -1,0 +1,151 @@
+/* Website Colors 
+F8F7F6 - background color
+98BFD1 - light blue
+2094E6 - cyanish blue
+EDB132 - yellow (accent colour)
+353137 - blackish (text color)
+*/
+
+/* NAV BAR */
+
+.text_center {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* VIDEO BANNER */
+
+/*FORM */
+#form2, #form{
+    margin: 10px auto 40px auto;
+    padding: 10px;
+    max-width: 50%;
+    background-color: #98BFD1 ;
+    text-align:center;
+    background-image:url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F736x%2F1d%2Fbd%2F8a%2F1dbd8a681dc657e811477790bf88a314.jpg&f=1&nofb=1");
+    background-repeat: no-repeat;
+    background-attachment:unset;
+    background-position: center;
+    background-blend-mode:hard-light;
+}
+
+#submit2, #submit {
+    display: block;
+    margin-top: 10px;
+    padding: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #EDB132;
+}
+
+#email2, #email {
+    max-width: 90%;
+}
+
+/* Footer */
+footer {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    z-index: 1;
+    background-color: #98BFD1;
+}
+
+#reduceimg {
+    width: 50%;
+    height: auto;
+}
+
+/* HERO BANNER */
+
+.hero-banner h1 {
+    font-size: 48px;
+}
+.hero-banner .btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 9;
+}
+.hero-banner .btn-primary {
+    color: #2f2f41;
+    background-color: rgba(1, 164, 121, 0.1);
+    border-color: #01a479;
+}
+.hero-banner .btn:before {
+    content: "";
+    background: #8DA242;
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+.hero-banner .btn:hover:before {
+    width: 100%;
+}
+
+body, html {
+    height: 100%;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F_calxOT6kJQM%2FTHWFPpjWY9I%2FAAAAAAAAM9M%2FTpgoKOYDf4I%2Fs1600%2Fdog%2Bwith%2Bmail%2Bdury%2Bdogs.JPG&f=1&nofb=1");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+  /* PRICING */
+  .pricing-card {
+    flex-direction: column;
+    min-width: 0;
+    color: #000;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgb(249, 249, 250);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1);
+    box-shadow: 0px 0px 5px 0px rgb(161, 163, 164)
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: #314666 !important;
+    border-color: #314666 !important
+}
+
+#pricing {
+    text-align: center;
+    font-size: 35px;
+}
+
+#pricing-table  {
+    margin-bottom: 40px;
+}
